@@ -1,11 +1,11 @@
 
-const swap = (array, i, j) => {
+const swap = (array: number[], i: number, j: number) => {
     const iValue = array[i];
     array[i] = array[j];
     array[j] = iValue;
 }
 
-const HoarePartition = (array, left, right) => {
+const HoarePartition = (array: number[], left: number, right: number) => {
     let i = left - 1;
     let j = right + 1;
 
@@ -30,7 +30,7 @@ const HoarePartition = (array, left, right) => {
     }
 }
 
-const quickSortHoarePartitionRecursive = (array, left, right) => {
+const quickSortHoarePartitionRecursive = (array: number[], left: number, right: number) => {
     if (left < right) {
         const borderIndex = HoarePartition(array, left, right);
         quickSortHoarePartitionRecursive(array, left, borderIndex);
@@ -38,7 +38,7 @@ const quickSortHoarePartitionRecursive = (array, left, right) => {
     }
 }
 
-export const quickSortHoarePartition = (array) => {
+export const quickSortHoarePartition = (array: number[]) => {
     const maxIndex = (array.length - 1);
     if (maxIndex > 0) {
         const borderIndex = HoarePartition(array, 0, maxIndex);

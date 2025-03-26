@@ -1,7 +1,7 @@
 
 import { describe, it, expect } from "vitest";
 import { generateRandomIntArray } from "src/utils/generateRandomArray.js";
-import { quickSortLomutoPartition } from "src/algorithms/sorting/quickSortLomutoPartition";
+import { quickSortLomutoPartition } from "src/sorting/quickSortLomutoPartition.ts";
 
 describe("quickSortLomutoPartition()", () => {
     it("Should sort an array", () => {

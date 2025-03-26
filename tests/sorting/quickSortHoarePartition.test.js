@@ -1,7 +1,7 @@
 
 import { describe, it, expect } from "vitest";
 import { generateRandomIntArray } from "src/utils/generateRandomArray.js";
-import { quickSortHoarePartition } from "src/algorithms/sorting/quickSortHoarePartition";
+import { quickSortHoarePartition } from "src/sorting/quickSortHoarePartition";
 
 describe("quickSortHoarePartition()", () => {
     it("Should sort an array", () => {

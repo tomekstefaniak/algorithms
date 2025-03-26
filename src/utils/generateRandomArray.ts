@@ -1,5 +1,5 @@
 
-export const generateRandomIntArray = (numberOfElements, lowestPossible, greatestPossible) => {
+export const generateRandomIntArray = (numberOfElements: number, lowestPossible: number, greatestPossible: number) => {
     if (
         numberOfElements < 1 
         || greatestPossible < lowestPossible
@@ -20,7 +20,7 @@ export const generateRandomIntArray = (numberOfElements, lowestPossible, greates
     return randomArray;
 };
 
-export const generateRandomFloatArray = (numberOfElements, lowestPossible, greatestPossible) => {
+export const generateRandomFloatArray = (numberOfElements: number, lowestPossible: number, greatestPossible: number) => {
     if (
         numberOfElements < 1 
         || greatestPossible < lowestPossible
