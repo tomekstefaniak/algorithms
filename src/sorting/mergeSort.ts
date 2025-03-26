@@ -30,7 +30,7 @@ const mergeSortRecursive = (array: number[], left: number, right:number) => {
         }
 
         for (let i: number = left; i <= right; i++) {
-            array[i] = mergedList.shift()!;
+            array[i] = mergedList[i - left]!;
         }
     }
 }
