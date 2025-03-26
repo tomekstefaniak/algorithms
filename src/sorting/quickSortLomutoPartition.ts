@@ -29,10 +29,5 @@ const quickSortLomutoPartitionRecursive = (array: number[], left: number, right:
 }
 
 export const quickSortLomutoPartition = (array: number[]) => {
-    const maxIndex: number = (array.length - 1);
-    if (maxIndex > 0) {
-        const pivotIndex = lomutoPartition(array, 0, maxIndex);
-        quickSortLomutoPartitionRecursive(array, 0, pivotIndex - 1);
-        quickSortLomutoPartitionRecursive(array, pivotIndex + 1, maxIndex);
-    }
+    quickSortLomutoPartitionRecursive(array, 0, array.length - 1);
 }

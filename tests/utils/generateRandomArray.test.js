@@ -1,6 +1,6 @@
 
 import { describe, it, expect } from "vitest";
-import { generateRandomIntArray, generateRandomFloatArray } from "src/utils/generateRandomArray.js";
+import { generateRandomIntArray, generateRandomFloatArray } from "src/utils/generateRandomArray.ts";
 
 describe("generateRandomIntArray()", () => {
     it("Should generate array with provided number of elements within given range", () => {

@@ -1,23 +1,23 @@
 
 import { describe, it, expect } from "vitest";
-import { generateRandomIntArray } from "src/utils/generateRandomArray.ts";
-import { quickSortLomutoPartition } from "src/sorting/quickSortLomutoPartition.ts";
+import { generateRandomFloatArray } from "src/utils/generateRandomArray.ts";
+import { insertionSort } from "src/sorting/insertionSort.ts";
 
-describe("quickSortLomutoPartition()", () => {
+describe("insertionSort()", () => {
     it("Should sort an array", () => {
         // Arrange
         const numberOfElements = 1e2;
         const lowestPossible = 0;
         const greatestPossible = 1e6;
 
-        const array = generateRandomIntArray(
+        const array = generateRandomFloatArray(
             numberOfElements,
             lowestPossible,
             greatestPossible
         );
 
         // Act
-        quickSortLomutoPartition(array);
+        insertionSort(array);
         
         // Assert
         let sorted = true;
